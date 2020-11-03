@@ -6,36 +6,38 @@
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
+    <style type="text/css">
+   
+
+</style>
     <style>
-    #tabulka{
+    .tabulka{
         width: 300px;
         border: 1px solid black;
-        
+      
        
     }
 </style>
   </head>
   
   <body>
-    
     <h1>Kvadratická rovnice</h1>
-    <input type="number" id="a"> x2 + <input type="number" id="b"> x + <input type="number" id="c"> = 0
+    <input type="number" id="a"> x² + <input type="number" id="b"> x + <input type="number" id="c"> = 0
     <input type="button" value="Počítej" onclick="kvadra()">
     <br>
     <br>
-       <table id="tabulka"> 
+       <table class="tabulka"> 
         <tr> <td>
     <b>D=</b> <span id="Dis"></span>
             </td>
     </tr>
     </table>
-    <br>
-      <table>
+        <table>
     <tr>
-                <td id="tabulka"><b>x1=</b><span id="x1"></span></td>
+                <td class="tabulka"><b>x1=</b><span id="x1"></span></td>
         <tr>
             </tr>
-          <td id="tabulka"><b>x2=</b><span id="x2"></span></td>
+          <td class="tabulka"><b>x2=</b><span id="x2"></span></td>
     </tr>
 </table>
 
@@ -48,6 +50,6 @@
     <h1>Prvočísla</h1>
     Prvních <input type="number" id="cislo"> prvočísel
     <input type="button" value="Vypiš" onclick="prvcisl()">
-    <div id="vypis"></div>
+    <div id="napsat"></div>
   </body>
 </html>
